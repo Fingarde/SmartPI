@@ -1,0 +1,62 @@
+html
+{
+	height: 100%;
+	width: 100%;
+}
+
+html, body
+{
+	margin: 0;
+    padding: 0;
+}
+
+.flex
+{
+	display: flex;
+}
+
+.flex.row
+{
+	flex-direction: row;
+}
+
+.flex.column
+{
+	flex-direction: column;
+}
+
+.flex.wrap
+{
+	flex-wrap: wrap;
+}
+
+.flex.noWrap
+{
+	flex-wrap: nowrap;
+}
+
+.flex.xCenter
+{
+	justify-content: center;
+}
+
+.flex.xSpaceBetween
+{
+	justify-content: space-between;
+}
+
+.absolute
+{
+	position: absolute;
+}
+
+.relative
+{
+	position: relative;
+}
+
+.yCenter
+{
+	justify-content: center
+}
+

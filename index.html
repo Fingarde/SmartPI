@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Smart PI</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/framework.css">
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Black:regular" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Lalezar:regular" rel="stylesheet" />
+
+		<script src="js/jquery.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+
+	<body class="flex column noWrap" onload="clock(); getMeteo()">
+		<section class="header flex row noWrap xSpaceBetween">
+			<div class="time flex column noWrap yCenter fontColor">
+				<div class="hour primaryFont"></div>
+				<div class="date secondaryFont"></div>
+			</div>
+			<div class="weatherContainer fontColor">
+				<div class="summary flex row noWrap">
+					<div class="cropper relative">
+						<img class="icon absolute" src=""/>
+					</div>
+					<div class="flex column noWrap yCenter">
+							<div class="temp primaryFont "></div>
+							<div class="weather secondaryFont"></div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<nav class="mainAction">
+			<ul class="flex row noWrap xCenter">
+				<li><img class="menu grow" width="220" height="200" src="images/icon/tv.png"/></li>
+				<li><img class="menu grow" width="220" height="200" src="images/icon/netflix.png"/></li>
+				<li><img class="menu grow" width="220" height="200" src="images/icon/twitch.png"/></li>
+				<li><img class="menu grow" width="220" height="200" src="images/icon/youtube.png"/></li>
+				<li><img class="menu grow" width="220" height="200" src="images/icon/playnite.png"/></li>
+			</ul>
+		</nav>
+	</body>
+</html>

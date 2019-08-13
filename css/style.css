@@ -1,0 +1,148 @@
+body
+{
+	background-image: radial-gradient(circle, rgba(36, 50, 243, 0.637) 0%, rgba(31, 184, 255, 0.692) 100%);
+	background: linear-gradient(120deg, rgb(201, 158, 250), #9a3ce785, #23a6d5, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	
+	animation: gradient 40s infinite linear;
+}
+
+@keyframes gradient 
+{
+	0% 
+	{
+		background-position: 0% 50%;
+	}
+	50% 
+	{
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*@keyframes gradient
+{
+	0%, 100%
+	{
+		background-position: left bottom;
+	}
+	25%
+	{
+		background-position: left top;
+	}
+	50%
+	{
+		background-position: right top;
+	}
+	75%
+	{
+		background-position: right bottom;
+	}
+}*/
+
+.header.flex
+{
+	padding: 30px 60px 0 60px;
+}
+
+.fontColor
+{
+	color: rgb(255, 255, 255);
+}
+
+.primaryFont
+{
+	font-family: 'Archivo Black';
+}
+
+.secondaryFont
+{
+	font-family: 'Lalezar';
+}
+
+.weatherContainer>div.summary
+{
+	justify-content: flex-end;
+}
+
+.hour
+{
+	font-size: 60px;
+	line-height: 50px;
+}
+
+
+.date
+{
+	font-size: 50px;
+	line-height: 60px;
+}
+
+.temp
+{
+	font-size: 50px;
+	line-height: 40px;
+}
+
+.weather
+{
+
+	font-size: 30px;
+}
+
+.weatherContainer>div.summary>div:not(.cropper)
+{
+	margin-left: 20px;
+}
+
+.cropper
+{
+	height: 150px;
+	width: 150px;
+	
+}
+
+.cropper>.icon
+{
+	top: 50%;
+	left: 50%;
+	height: 150%;
+	width: 150%;
+	transform: translate(-50%, -50%);
+}
+
+.mainAction
+{
+	margin-top: 15rem;
+	
+}
+
+.mainAction>.flex.row
+{
+	margin: 0 80px 0 80px
+}
+
+.grow
+{
+	 transition: all .2s ease-in-out; 
+}
+
+li
+{
+    list-style-type: none;
+}
+
+
+.mainAction>ul>li>img
+{
+	background-image:radial-gradient( rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0));
+	border: 0.1em solid rgb(255, 255, 255);
+	border-radius: 25px;
+	margin: 0 .5rem 0 .5rem;
+}
+
+.selected
+{
+	transform: scale(1.3); 
+}
